@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ViewConsole
 {
     public delegate void Operacao();
-    class Crud
+    public class Crud
     {
         protected List<BaseModel> lista = new List<BaseModel>();
         protected Operacao opCadastrar;

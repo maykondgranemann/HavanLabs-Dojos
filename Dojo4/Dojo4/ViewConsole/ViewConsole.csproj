@@ -46,6 +46,8 @@
     <Compile Include="Crud.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="ModuloCategoria.cs" />
+    <Compile Include="ModuloProduto.cs" />
+    <Compile Include="OperacoesProduto.cs" />
     <Compile Include="OperacoesCategoria.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

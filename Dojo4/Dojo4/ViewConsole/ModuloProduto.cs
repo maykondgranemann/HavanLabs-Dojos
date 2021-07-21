@@ -6,36 +6,39 @@ using System.Threading.Tasks;
 
 namespace ViewConsole
 {
-    class Menu : Tela
+
+    public class ModuloProduto : Tela
     {
-        public void CriaMenu()
+        OperacoesProduto opProd = new OperacoesProduto();
+        
+        public void MenuProduto()
         {
             int escolha = 0;
             do
             {
                 Console.Clear();
                 Cabecalho();
-                MontaMenu();
+                Console.WriteLine("\n1 - Cadastrar \n2 - Listar \n3 - Editar \n4 - Deletar \n0 - Sair");
                 escolha = Escolha();
             } while (escolha != 0);
+
         }
-        private void MontaMenu()
-        {
-            Console.WriteLine("\n1- Categorias\n2- Produtos\n0- Sair");
-            
-        }
-        ModuloCategoria moduloCategoria = new ModuloCategoria();
-        ModuloProduto moduloProduto = new ModuloProduto();
         private int Escolha()
         {
             int escolha = Convert.ToInt32(Console.ReadLine());
             switch (escolha)
             {
                 case 1:
-                    moduloCategoria.MenuCategoria();
+                    opProd.Cadastrar();
                     break;
                 case 2:
-                    moduloProduto.MenuProduto();
+                    opProd.Listar();
+                    break;
+                case 3:
+                    opProd.Editar();
+                    break;
+                case 4:
+                    opProd.Deletar();
                     break;
                 default:
                     break;
