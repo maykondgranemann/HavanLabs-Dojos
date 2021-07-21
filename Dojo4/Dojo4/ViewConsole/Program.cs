@@ -12,7 +12,6 @@ namespace ViewConsole
         {
             Menu menu = new Menu();
             menu.CriaMenu();
-            Console.ReadLine();
         }
     }
 }

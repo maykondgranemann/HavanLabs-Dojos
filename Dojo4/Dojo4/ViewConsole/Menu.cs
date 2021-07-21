@@ -10,9 +10,14 @@ namespace ViewConsole
     {
         public void CriaMenu()
         {
-            Cabecalho();
-            MontaMenu();
-            Escolha();
+            int escolha = 0;
+            do
+            {
+                Console.Clear();
+                Cabecalho();
+                MontaMenu();
+                escolha = Escolha();
+            } while (escolha != 0);
         }
         private void MontaMenu()
         {
@@ -20,7 +25,7 @@ namespace ViewConsole
             
         }
         ModuloCategoria moduloCategoria = new ModuloCategoria();
-        private void Escolha()
+        private int Escolha()
         {
             int escolha = Convert.ToInt32(Console.ReadLine());
             switch (escolha)
@@ -34,6 +39,7 @@ namespace ViewConsole
                 default:
                     break;
             }
+            return escolha;
         }
     }
 }
