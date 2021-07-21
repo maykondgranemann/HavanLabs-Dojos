@@ -42,10 +42,24 @@ namespace ViewConsole
         }
         private void EditarCat()
         {
+            ListarCat();
+            Console.WriteLine("Selecione o Id da categoria: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            var model = (Categoria)lista.Find(c => c.Id == id);
+            Console.Write("Digite o nome: ");
+            model.Nome = Console.ReadLine().Trim();
+            Console.Write("Digite a descrição: ");
+            model.Descricao = Console.ReadLine();
+
 
         }
         private void DeletarCat()
         {
+            ListarCat();
+            Console.WriteLine("Selecione o Id da categoria: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            var model = lista.Find(c => c.Id == id);
+            lista.Remove(model);
 
         }
     }
