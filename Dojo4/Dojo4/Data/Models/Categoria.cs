@@ -8,8 +8,8 @@ namespace Data.Models
 {
     public class Categoria : BaseModel
     {
-        public string Descricao { get; set; }
         public string Nome { get; set; }
+        public string Descricao { get; set; }
 
         public Categoria()
         {
