@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data.Models
 {
+   
     public class Categoria
     {
         public int Id { get; set; }

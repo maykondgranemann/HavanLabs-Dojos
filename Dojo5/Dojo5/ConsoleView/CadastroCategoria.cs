@@ -4,11 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Data.Models;
+using Data.Repository;
 
 namespace ConsoleView
 {
     class CadastroCategoria
     {
+        private RepositoryCategoria Repository { get; set; }
+        public CadastroCategoria()
+        {
+            Repository = new RepositoryCategoria();
+        }
         public void CadastrarCategoria()
         {
             Categoria cat = new Categoria();
@@ -19,6 +25,8 @@ namespace ConsoleView
             cat.Nome = Console.ReadLine();
             Console.WriteLine("Insira a descricao da Categoria");
             cat.Descricao = Console.ReadLine();
+            Repository.Create(cat);
         }
+
     }
 }
