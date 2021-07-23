@@ -19,6 +19,10 @@ namespace Data.Repository
         {
             this.Categorias.Add(model);
         }
+        public List<Categoria> ReadAll()
+        {
+            return this.Categorias;
+        }
     }
     
 }

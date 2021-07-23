@@ -26,6 +26,15 @@ namespace ConsoleView
             Console.WriteLine("Insira a descricao da Categoria");
             cat.Descricao = Console.ReadLine();
             Repository.Create(cat);
+            this.ListaCategoria();
+        }
+        public void ListaCategoria()
+        {
+            foreach (var item in Repository.ReadAll())
+            {
+                Console.WriteLine($"ID: {item.Id}\nNome: {item.Nome}\nDescrição: {item.Descricao}");
+            }
+
         }
 
     }

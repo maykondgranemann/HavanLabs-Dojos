@@ -28,6 +28,12 @@ namespace WF
             cat.Nome = tbNomeC.Text;
             cat.Descricao = tbDescriC.Text;
             Repository.Create(cat);
+            CarregaGridView();
+        }
+        private void CarregaGridView()
+        {
+            this.dgListaCategoria.DataSource = Repository.ReadAll();
+            this.dgListaCategoria.Refresh();
         }
     }
 }
