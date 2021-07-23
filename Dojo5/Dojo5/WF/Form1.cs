@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Data.Models;
 
 namespace WF
 {
@@ -15,6 +16,14 @@ namespace WF
         public Fcategoria()
         {
             InitializeComponent();
+        }
+
+        private void btSalvar_Click(object sender, EventArgs e)
+        {
+            Categoria cat = new Categoria();
+            cat.Id = Convert.ToInt32(tbIdC.Text);
+            cat.Nome = tbNomeC.Text;
+            cat.Descricao = tbDescriC.Text;
         }
     }
 }

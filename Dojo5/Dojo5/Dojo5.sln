@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF", "WF\WF.csproj", "{528B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleView", "ConsoleView\ConsoleView.csproj", "{F6F03844-1A8F-450D-97E0-50AA8D413EFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{19B00003-8B86-44ED-A3B2-153ECDF8CE59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F6F03844-1A8F-450D-97E0-50AA8D413EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6F03844-1A8F-450D-97E0-50AA8D413EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6F03844-1A8F-450D-97E0-50AA8D413EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B00003-8B86-44ED-A3B2-153ECDF8CE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B00003-8B86-44ED-A3B2-153ECDF8CE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B00003-8B86-44ED-A3B2-153ECDF8CE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B00003-8B86-44ED-A3B2-153ECDF8CE59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

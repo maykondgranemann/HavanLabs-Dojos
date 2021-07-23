@@ -129,6 +129,7 @@ namespace WF
             this.btSalvar.TabIndex = 6;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
             // 
             // btLimpar
             // 
@@ -151,7 +152,7 @@ namespace WF
             this.dgListaCategoria.Name = "dgListaCategoria";
             this.dgListaCategoria.Size = new System.Drawing.Size(553, 154);
             this.dgListaCategoria.TabIndex = 8;
-            // 
+            //
             // btDeletar
             // 
             this.btDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

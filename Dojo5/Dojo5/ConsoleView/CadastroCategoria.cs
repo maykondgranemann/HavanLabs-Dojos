@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Data.Models;
 
 namespace ConsoleView
 {
     class CadastroCategoria
     {
-
         public void CadastrarCategoria()
         {
+            Categoria cat = new Categoria();
             Console.WriteLine("----------Bemvindo----------");
             Console.WriteLine("Insira o ID");
-            string id = Console.ReadLine();
+            cat.Id = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Insira o Nome da Categoria");
-            string categoria = Console.ReadLine();
+            cat.Nome = Console.ReadLine();
             Console.WriteLine("Insira a descricao da Categoria");
-            string descricao = Console.ReadLine();
-            
+            cat.Descricao = Console.ReadLine();
         }
     }
 }
