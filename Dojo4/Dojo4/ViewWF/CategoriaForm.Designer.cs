@@ -200,6 +200,7 @@ namespace ViewWF
             this.Controls.Add(this.lbTitulo);
             this.Name = "CategoriaForm";
             this.Text = "CategoriaForm";
+            this.Load += new System.EventHandler(this.CategoriaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgCategorias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

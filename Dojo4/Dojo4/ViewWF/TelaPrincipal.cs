@@ -20,7 +20,7 @@ namespace ViewWF
 
         private void btnCategoria_Click(object sender, EventArgs e)
         {
-            CategoriaForm catForm = new CategoriaForm();
+            CategoriaForm catForm = new CategoriaForm("Cat1");
             catForm.Show();
         }
 

@@ -23,6 +23,15 @@ namespace ViewWF
             dgCategorias.AllowUserToAddRows = false;
             CarregarLista();
         }
+        public CategoriaForm(string name)
+        {
+            InitializeComponent();
+            this.lbTitulo.Text = name;
+            Categoria = new List<Categoria>();
+            dgCategorias.AutoGenerateColumns = false;
+            dgCategorias.AllowUserToAddRows = false;
+            CarregarLista();
+        }
 
         private void btLimpar_Click(object sender, EventArgs e)
         {
@@ -91,6 +100,11 @@ namespace ViewWF
             this.tbNome.Text = categoria.Nome;
             this.tbDescricao.Text = categoria.Descricao;
             this.lbMensagem.Text = String.Empty;
+
+        }
+
+        private void CategoriaForm_Load(object sender, EventArgs e)
+        {
 
         }
     }
