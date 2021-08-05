@@ -1,0 +1,67 @@
+table{
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10%;
+    text-align: center;
+    align-self: center;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(228, 162, 174, 0.685);
+}
+
+a{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+header{
+    display: grid;
+    height:30%;
+    width: 100%;
+    grid-template-rows: 1fr 1fr;
+    
+}
+nav{
+    align-self: center;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(223, 223, 223, 0.815);
+}
+h1{
+    align-self: center;
+    justify-self: center;
+    text-transform: uppercase;
+}
+
+th, td{
+    border: 1px solid black;
+    height: 10%;
+    width: 10%;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    font-size: 20px;
+}
+th{
+    background-color: rgb(255, 196, 206);
+    color: white;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+.tabolo{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    height: 40vh;
+}
+td{
+    height: 80%;
+}

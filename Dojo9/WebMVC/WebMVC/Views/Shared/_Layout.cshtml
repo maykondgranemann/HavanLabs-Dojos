@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Havan - @ViewBag.nomePag</title>
+</head>
+<body>
+    <header>
+        <nav>
+            @Html.ActionLink("Home", "Index")
+            @Html.ActionLink("Cadastro", "Cadastro")
+            @Html.ActionLink("Listar", "Listar")
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+            <div class="alto">
+                <h1>Delegates da Depressãooo!</h1>
+            </div>
+            <nav>
+                <a onclick="cadastros()">Cadastro</a>
+                <a onclick="listar()">Listar</a>
+            </nav>
+            
+    </header>
+    <div id="cadastro">
+
+    </div>
+    <script>
+function cadastros()
+{
+    let cadastro = new XMLHttpRequest();
+    cadastro.open("GET","cadastro.html")
+    cadastro.onload = function()
+    {
+        document.getElementById("cadastro").innerHTML = this.responseText;
+    }
+    cadastro.send();
+}
+function listar()
+{
+    let listar = new XMLHttpRequest();
+    listar.open("GET","listar.html")
+    listar.onload = function()
+    {
+        document.getElementById("cadastro").innerHTML = this.responseText;
+        carregarTabela();
+    }
+    listar.send();
+}
+    </script>
+    <script src="../js/ajax.js"></script>
+</body>
+</html>
