@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<WebMVC.Models.Skate>
+@{
     ViewBag.nomePag = "Listar";
 }
 <table>
@@ -7,13 +8,21 @@
             <th>ID</th>
             <th>Marca</th>
             <th>Descrição</th>
+            <th>Acoes</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>1</td>
-            <td>asdasd</td>
-            <td>sdf</td>
-        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Marca</td>
+                <td>@item.Descricao</td>
+                <td>
+                    <a href="/Home/Editar/@item.Id">Editar</a> |
+                    <a href="/Home/Deletar/@item.Id">Deletar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

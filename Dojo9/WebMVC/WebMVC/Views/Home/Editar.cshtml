@@ -1,0 +1,24 @@
+﻿@model WebMVC.Models.Skate
+@{
+    ViewBag.nomePag = "Editando - "+ Model.Marca;
+}
+<div>
+    <fieldset>
+        <legend>Cadastro de skate</legend>
+        <form action="/Home/Editar" method="post">
+            <div>
+                <label>Id: </label>
+                <input type="number" id="id" name="id" value="@Model.Id" />
+            </div>
+            <div>
+                <label>Marca: </label>
+                <input type="text" id="marca" name="marca" value="@Model.Marca" />
+            </div>
+            <div>
+                <label>Descrição: </label>
+                <input type="text" id="descricao" name="descricao" value="@Model.Descricao" />
+            </div>
+            <input type="submit" value="Salvar" />
+        </form>
+    </fieldset>
+</div>

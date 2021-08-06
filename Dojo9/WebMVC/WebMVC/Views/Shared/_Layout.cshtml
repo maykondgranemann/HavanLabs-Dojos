@@ -6,7 +6,11 @@
 <body>
     <header>
         <nav>
-            @Html.ActionLink("Home", "Index")
+            <a href="/Home/Index">I</a>
+            <a href="/Home/Cadastro">C</a>
+            <a href="/Home/Listar">L</a>
+            <!-- Nome do link , Action, Controller -->
+            @Html.ActionLink("Home", "Index", "Home")
             @Html.ActionLink("Cadastro", "Cadastro")
             @Html.ActionLink("Listar", "Listar")
         </nav>

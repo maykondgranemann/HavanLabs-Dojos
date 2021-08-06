@@ -1,19 +1,21 @@
 ﻿@{
-    ViewBag.nomePag = "Cadstro";
+    ViewBag.nomePag = "Cadastro";
 }
 
 <div>
     <fieldset>
         <legend>Cadastro de skate</legend>
-        <div>
-            <label>Id: </label><input type="number" id="id" />
-        </div>
-        <div>
-            <label>Marca: </label><input type="text" id="marca" />
-        </div>
-        <div>
-            <label>Descrição: </label><input type="text" id="descricao" />
-        </div>
+        <form action="/Home/Salvar" method="post">
+            <div>
+                <label>Id: </label><input type="number" id="id" name="id"/>
+            </div>
+            <div>
+                <label>Marca: </label><input type="text" id="marca" name="marca" />
+            </div>
+            <div>
+                <label>Descrição: </label><input type="text" id="descricao" name="descricao" />
+            </div>
+            <input type="submit" value="Salvar" />
+        </form>
     </fieldset>
-    <button id="salvar">Salvar</button>
 </div>
