@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dojo11", "Dojo11\Dojo11.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPP", "WebAPP\WebAPP.csproj", "{B25A610A-CB37-484C-8ABF-15D6C8D444B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFADojo11", "WFADojo11\WFADojo11.csproj", "{F12B12C0-4102-42A9-B6C0-45D4D9FBE958}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B25A610A-CB37-484C-8ABF-15D6C8D444B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B25A610A-CB37-484C-8ABF-15D6C8D444B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B25A610A-CB37-484C-8ABF-15D6C8D444B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F12B12C0-4102-42A9-B6C0-45D4D9FBE958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F12B12C0-4102-42A9-B6C0-45D4D9FBE958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F12B12C0-4102-42A9-B6C0-45D4D9FBE958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F12B12C0-4102-42A9-B6C0-45D4D9FBE958}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
