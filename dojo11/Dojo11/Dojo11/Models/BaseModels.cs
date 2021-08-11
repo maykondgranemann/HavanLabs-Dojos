@@ -8,6 +8,6 @@ namespace Dojo11.Models
 {
     public abstract class BaseModels
     {
-        protected int Id { get; set; }
+        public int Id { get; set; }
     }
 }
